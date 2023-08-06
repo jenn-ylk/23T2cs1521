@@ -18,7 +18,7 @@ int main(void) {
                     // given in the `void *data` argument above
     );
 
-    // TODO: fix this so the thread can complete
+    // Use pthread_join so the program waits for the thread to complete
     pthread_join(thread, NULL);
 
     return 0;
